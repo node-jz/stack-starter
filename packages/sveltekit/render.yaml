@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: sveltekit-static
+    env: static
+    buildCommand: pnpm install && pnpm run build
+    staticPublishPath: build

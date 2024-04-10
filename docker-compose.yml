@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  nestjs:
+    build:
+      context: .
+      target: nestjs
+    ports:
+      - "3001:3001"
+    depends_on:
+      - postgres
+      - redis
+
+  sveltekit:
+    build:
+      context: .
+      target: sveltekit
+    ports:
+      - "3000:3000"
+    depends_on:
+      - nestjs
+
+  playwright:
+    build:
+      context: .
+      target: playwright
+    depends_on:
+      - sveltekit
+      - nestjs
+
+
+  postgres:
+    image: ankane/pgvector
+    environment:
+      PG_MAJOR: 15
+      POSTGRES_DB: mydatabase
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./postgres.extensions.sql:/docker-entrypoint-initdb.d/postgres.extensions.sql
+
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  postgres_data:
+  redis_data:

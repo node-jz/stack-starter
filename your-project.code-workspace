@@ -1,0 +1,63 @@
+{
+  "folders": [
+    {
+      "name": "🌱 Your Project",
+      "path": "."
+    },
+    {
+      "name": "📦 nestjs",
+      "path": "packages/nestjs"
+    },
+    {
+      "name": "📦 sveltekit",
+      "path": "packages/sveltekit"
+    },
+    {
+      "name": "📦 chrome-ext",
+      "path": "packages/chrome-ext"
+    }
+  ],
+  "settings": {
+    "files.exclude": {},
+    "workbench.colorCustomizations": {
+      "sideBarTitle.foreground": "#f43ab8",
+      "statusBar.background": "#f43ab8",
+      "statusBar.foreground": "#ffffff",
+      "tab.activeBorder": "#f43ab8",
+      "titleBar.activeBackground": "#D43830",
+      "titleBar.activeForeground": "#fff",
+      "titleBar.inactiveBackground": "#D43830",
+      "titleBar.inactiveForeground": "#fff"
+    },
+    "ColorfulMonorepo.workspaces.collection": [
+      {
+        "path": "/Users/jeremyzaborowski/Programming/stack-starter",
+        "packageName": "your-project",
+        "label": "🌱  your-project",
+        "foreground": "#000000",
+        "background": "#f1ddcb"
+      },
+      {
+        "path": "/Users/jeremyzaborowski/Programming/stack-starter/packages/nestjs",
+        "packageName": "nestjs",
+        "label": "nestjs",
+        "foreground": "#ffffff",
+        "background": "#827824"
+      },
+      {
+        "path": "/Users/jeremyzaborowski/Programming/stack-starter/packages/sveltekit",
+        "packageName": "your-project-frontend",
+        "label": "🍀  your-project-frontend",
+        "foreground": "#ffffff",
+        "background": "#f43ab8"
+      },
+      {
+        "path": "/Users/jeremyzaborowski/Programming/stack-starter/packages/chrome-ext",
+        "packageName": "chrome-ext",
+        "label": "chrome-ext",
+        "foreground": "#ffffff",
+        "background": "#ba5766"
+      }
+    ]
+  }
+}
