@@ -20,10 +20,10 @@
   "settings": {
     "files.exclude": {},
     "workbench.colorCustomizations": {
-      "sideBarTitle.foreground": "#f43ab8",
-      "statusBar.background": "#f43ab8",
-      "statusBar.foreground": "#ffffff",
-      "tab.activeBorder": "#f43ab8",
+      "sideBarTitle.foreground": "#f1ddcb",
+      "statusBar.background": "#f1ddcb",
+      "statusBar.foreground": "#000000",
+      "tab.activeBorder": "#f1ddcb",
       "titleBar.activeBackground": "#D43830",
       "titleBar.activeForeground": "#fff",
       "titleBar.inactiveBackground": "#D43830",
